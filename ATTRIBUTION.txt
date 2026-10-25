@@ -1,0 +1,20 @@
+ANATOMY MODEL SOURCES
+
+Brain (existing model): Human Reference Atlas / HuBMAP, “Allen_M_Brain.glb” sourced from the Human Reference Atlas 3D collection. The current page links to the NIH 3D entry 3DPX-020960.
+https://3d.nih.gov/entries/20960
+
+Heart (female reference organ, HRA):
+https://3d.nih.gov/entries/20966
+https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.3/assets/3d-vh-f-heart.glb
+
+Lung (female reference organ, HRA):
+https://3d.nih.gov/entries/20974
+https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.4/assets/3d-vh-f-lung.glb
+
+The Human Reference Atlas / HuBMAP reference-organ data pages identify these 3D data with a Creative Commons Attribution 4.0 International (CC BY 4.0) license. Preserve attribution when redistributing the model assets. This package links to externally hosted GLB assets rather than bundling the model binaries.
+
+Educational source pages:
+Heart anatomy and blood flow: https://www.nhlbi.nih.gov/health/heart/anatomy
+Lung health: https://www.nhlbi.nih.gov/health/lungs
+
+These sources are for general education. Medora's own summaries should be checked against the original references before clinical or formal academic use.
