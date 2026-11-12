@@ -46,3 +46,24 @@ MALE REPRODUCTIVE INDIVIDUAL-PART 3D MODELS
 - Focused scrotum and bulbourethral-gland views are embedded from Layered Body Atlas: https://bodyatlas.github.io/parts/scrotum/ and https://bodyatlas.github.io/parts/bulbourethral-gland/ . The atlas describes its models as simplified educational illustrations, not medical-grade scans. Medora embeds the externally hosted viewer and does not bundle its geometry.
 - No independently isolated, verified 3D mesh for the spermatic cord alone was added. A combined model that also shows the testes was intentionally not used, in accordance with the requested scope. The spermatic-cord page discloses this limitation.
 - All external 3D viewers require an internet connection. Their respective licenses, credits and source limitations apply. Obtain specialist anatomical review before presenting the models as clinically validated anatomy.
+
+
+COGNI ANATOMY INTERACTIVE ORGAN ATLASES
+Medora embeds Cogni Anatomy interactive viewers directly below the existing primary model on each supported organ page. These are external iframe viewers; Medora does not download or redistribute their mesh files.
+
+- Brain viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=brain
+  Topic/source page: https://cogni.cards/anatomy/brain/
+  Source credit: BodyParts3D, DBCLS. Model page displays CC BY 4.0.
+- Heart viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=heart
+  Topic/source page: https://cogni.cards/anatomy/heart/
+  Source credit: BodyParts3D and Human Reference Atlas (HRA). Model page displays CC BY 4.0.
+- Respiratory viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=respiratory-isolated
+  Topic/source page: https://cogni.cards/anatomy/respiratory-system/
+  Source credit: BodyParts3D and Z-Anatomy. Model page displays CC BY-SA 4.0.
+- Male urogenital viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=urogenital-male-isolated
+  Topic/source page: https://cogni.cards/anatomy/male-reproductive-system/
+  Source credit: BodyParts3D, DBCLS. Model page displays CC BY 4.0.
+
+Cogni Anatomy describes its atlas as an interactive browser-based viewer with selectable anatomical structures, system visibility controls, zoom/rotation, isolation/transparency and section tools. It uses multiple datasets and licenses; where content includes Z-Anatomy geometry, CC BY-SA 4.0 requirements apply. See https://cogni.cards/anatomy/about/ for source-specific license details and limitations. The viewer models are educational reference anatomy, not diagnostic tools and not representations of individual variation.
+
+The existing Medora primary models remain in place: the Sketchfab brain, the existing heart/lung GLB reference models and the user's Ebers male reproductive system Sketchfab embed. The male atlas was moved out of its collapsed details disclosure so it appears visibly below the primary male-system model, matching the placement used on the other organ pages.
