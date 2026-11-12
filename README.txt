@@ -36,8 +36,8 @@ MEDORA — نسخة محدثة للنشر على GitHub Pages
 
 
 Male reproductive system content
-- Search for “الجهاز التناسلي الذكري” or “Male reproductive system” to open its topic page.
-- The main Ebers Sketchfab embed is the user-provided system model.
-- The page includes separate anatomical topic pages for testes, seminiferous tubules, epididymis, vas deferens, seminal vesicles, ejaculatory ducts, prostate, bulbourethral glands, urethra, penis, corpora cavernosa, corpus spongiosum, glans, scrotum, and spermatic cord.
-- Each part page begins with an interactive simplified 3D schematic, then explanatory text, a schematic location diagram, and relevant NCBI references. It also provides an optional external reference atlas with selectable structures. The prostate and testis pages additionally include dedicated external 3D viewers.
-- These 3D schematics are labelled as educational simplifications, not exact anatomical scans. External viewers require internet access. Check model attribution and reuse terms in ATTRIBUTION.txt.
+- The user's Ebers Sketchfab whole-system model is unchanged.
+- The existing testis / seminiferous-tubule model is unchanged.
+- Separate individual-part 3D models now cover prostate, seminal vesicles, epididymis, vas deferens, corpora cavernosa, corpus spongiosum, glans, urethra and a penis composite; Anatomio provides separate right/left ejaculatory-duct viewers; Body Atlas provides focused scrotum and bulbourethral-gland viewers.
+- No verified standalone 3D model for the spermatic cord alone is currently used. A combined model that includes testes was intentionally excluded.
+- See ATTRIBUTION.txt for source, licence and embed credits. Body Atlas models are simplified learning illustrations, not medical-grade scans. External viewers require internet access.
