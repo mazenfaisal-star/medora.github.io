@@ -1,7 +1,9 @@
 ANATOMY MODEL SOURCES
 
-Brain (existing model): Human Reference Atlas / HuBMAP, “Allen_M_Brain.glb” sourced from the Human Reference Atlas 3D collection. The current page links to the NIH 3D entry 3DPX-020960.
-https://3d.nih.gov/entries/20960
+Brain (whole-brain interactive embed): “Plastinated Human Brain” by UBC Medicine - Educational Media, embedded from Sketchfab.
+Model page: https://sketchfab.com/3d-models/plastinated-human-brain-2df234ff65b0483fb5b5e15e40efa65d
+Embed URL: https://sketchfab.com/models/2df234ff65b0483fb5b5e15e40efa65d/embed
+The iframe embed is used rather than downloading or redistributing the model file. Follow the model page and Sketchfab terms for reuse; do not infer a Creative Commons license from the embed code.
 
 Heart (female reference organ, HRA):
 https://3d.nih.gov/entries/20966
@@ -18,3 +20,21 @@ Heart anatomy and blood flow: https://www.nhlbi.nih.gov/health/heart/anatomy
 Lung health: https://www.nhlbi.nih.gov/health/lungs
 
 These sources are for general education. Medora's own summaries should be checked against the original references before clinical or formal academic use.
+
+CEREBELLUM MODEL EMBED
+Sketchfab model: “Cerebellum” by anajd.
+Embedded from Sketchfab (the model is hosted by Sketchfab and is not bundled in this repository):
+https://sketchfab.com/3d-models/cerebellum-3a4e017a202a4928b666371d075d0e21
+Embed URL:
+https://sketchfab.com/models/3a4e017a202a4928b666371d075d0e21/embed
+The Sketchfab page and its displayed license govern reuse of this model. Medora uses the provided embedded viewer and preserves creator/platform attribution.
+
+
+Male reproductive system additions (educational embeds)
+- Main model embedded from Sketchfab: “Male reproductive system” by Ebers: https://sketchfab.com/3d-models/male-reproductive-system-b77f14ee1cf743ffbac365b045598c48
+- Optional selectable anatomy atlas: Cogni Anatomy male reproductive system viewer; geometry credited to BodyParts3D, CC BY 4.0: https://cogni.cards/anatomy/male-reproductive-system/
+- Prostate and bladder interactive model: ICUA, derived from Human Reference Atlas / Visible Human Male, CC BY 4.0. The page notes the urethra is reconstructed schematically: https://holep.icua.es/anatomia/en.html
+- Testis cut-section model (Sketchfab viewer): “Testis Cut Section With Labels detail” by Deepankar Parmar: https://sketchfab.com/3d-models/testis-cut-section-with-labels-detail-2af4a301518a47c4b298f1872ec76fcc. Viewer embed only; check creator terms before any download, adaptation, or reuse outside Sketchfab.
+- Medical text references: StatPearls / NCBI Bookshelf, “Physiology, Male Reproductive System” (updated 2023-05-01): https://www.ncbi.nlm.nih.gov/books/NBK538429/ ; “Anatomy, Abdomen and Pelvis, Male Genitourinary Tract” (updated 2022-09-12): https://www.ncbi.nlm.nih.gov/books/NBK562291/
+
+Notes: The custom Three.js models for individual structures are simplified educational schematics, not anatomical scans or clinical-grade reconstructions. Do not present them as exact models. External 3D viewers require internet access.

@@ -1,32 +1,43 @@
-Medora — Anatomy Topic Pages Prototype (v2)
+MEDORA — نسخة محدثة للنشر على GitHub Pages
 
-UPLOAD ALL FILES IN THIS FOLDER TO THE ROOT OF YOUR GITHUB PAGES REPOSITORY. Do not upload only one HTML file.
+الملفات الموجودة في جذر الحزمة:
+- index.html: الصفحة الرئيسية؛ تظهر حتى قسم العناصر المحفوظة فقط.
+- topic.html: نفس تطبيق Medora ويعرض صفحة مستقلة حسب ?q=... عند البحث.
+- supabase-config.js: ملف إعداد المصادقة؛ يحتاج إلى بيانات مشروعك قبل تفعيل تسجيل الدخول الحقيقي.
+- ATTRIBUTION.txt: نسب المصادر والتراخيص.
 
-FILES:
-- index.html: Medora homepage and main search.
-- topic.html: standalone topic page, opened by search as topic.html?q=...
-- supabase-config.js: authentication configuration template. Email sign-in stays inactive until a real Supabase project is configured.
-- ATTRIBUTION.txt: anatomical model sources, credits, and licensing notes.
+النشر:
+1. ارفع محتويات هذا المجلد نفسها إلى جذر مستودع GitHub، ولا ترفع المجلد الأب كمجلد فرعي.
+2. من Settings > Pages اختر Deploy from a branch، ثم main و /(root).
+3. تأكد أن index.html وtopic.html بجوار بعضهما.
 
-WHAT THIS BUILD DOES:
-1. Searching for القلب or الرئة opens a dedicated organ page rather than leaving the answer as inline search cards. The page contains an in-site summary, key facts, a rotatable 3D organ model, a list of anatomical parts, and references.
-2. Clicking a part in the part list opens its own topic.html?q=... page with more detailed information, a part-focused schematic, adjacent part links, a source section, and a 3D part viewer when the source model contains a separable, named structure.
-3. Brain-region search opens a dedicated page with the 3D brain explorer and part links. The in-model region selector provides a link to the detailed region page.
-4. For heart and lung components, the 3D substructure viewer is loaded only when the user presses its button, to reduce unnecessary data use on mobile. It attempts to isolate a named component from the referenced GLB file. If the file does not expose a matching anatomical node name, the viewer says so and the part-specific schematic remains available; it does not claim a false isolation.
-5. The page «مبادئ المواد الفعّالة» gives a general educational explanation of active ingredients, inactive ingredients/excipients, and source verification. It does not provide a product/brand matching list or medication-use recommendations.
-6. The existing 8 main fields and 88 sub-specialty entries are retained.
+التغييرات في هذه النسخة:
+- الصفحة الرئيسية مقتصرة على مساحة البحث والوصول السريع والعناصر المحفوظة.
+- صفحة العضو تعرض مجسمه أولًا، ثم قائمة الأجزاء القابلة للفتح كصفحات مستقلة، ثم شرح العضو والمراجع.
+- صفحة الجزء تعرض مجسمًا توضيحيًا ثلاثي الأبعاد مستقلًا أولًا، ثم المعلومات التفصيلية، ثم المراجع. بعض مجسمات الأجزاء مبسطة وليست نموذجًا تشريحيًا دقيق القياس.
+- تحسين تباين الألوان في الوضع الداكن.
+- شريط ثابت أسفل الشاشة يحمل: One Platform. Every Knowledge
+- قسم الكيمياء يعرض أمثلة جزيئية تعليمية وبيانات التحقق؛ لا يتضمن توجيهًا لاختيار منتج دوائي أو جرعات أو قائمة علامات تجارية.
 
-KNOWN LIMITATIONS:
-- This is still a prototype, not a complete medical search engine or a clinical tool.
-- The external 3D models require internet access. Some assets, especially lung models, can be large. Load the isolated component model only when needed.
-- Exact hit testing depends on the names and structure stored in the source GLB; not every component can be guaranteed to be isolatable. Use the named part list when direct click recognition does not work.
-- Saved items and recent searches are local to the browser. Cross-device account syncing needs a configured backend.
-- Real email registration is not enabled until Supabase credentials and redirect settings are configured.
+ملاحظات:
+- نماذج 3D تحتاج إلى اتصال إنترنت وتحميل مكتبات خارجية.
+- تسجيل الدخول والمزامنة بين الأجهزة لا يعملان قبل إعداد Supabase وربط قاعدة البيانات.
+- محتوى Medora تعليمي وليس بديلًا عن التشخيص أو المشورة الطبية.
+- صفحة المخيخ تستخدم الآن عارض Sketchfab المضمّن للنموذج “Cerebellum” بواسطة anajd، مع إبقاء اسم صاحب النموذج ورابطه. يتطلب العارض اتصالًا بالإنترنت، وقد تمنع بعض إعدادات الخصوصية أو حجب المحتوى تحميله.
 
-PUBLISHING:
-Upload these files (not the ZIP itself) directly into the repository root so index.html, topic.html, supabase-config.js and ATTRIBUTION.txt are side by side. Then enable GitHub Pages from branch main / root.
 
-QUICK TESTS AFTER PUBLISHING:
-Search for: القلب, الرئة, المخ, المخيخ, البطين الأيسر, الصمام التاجي, الحويصلات الهوائية, الفص الجبهي, طب القلب, المواد الفعالة.
+تحديث نموذج المخ الكامل:
+- تم استبدال مجسم المخ الكامل فقط بعارض Sketchfab: Plastinated Human Brain بواسطة UBC Medicine - Educational Media.
+- نموذج المخيخ المستقل السابق لم يتغير.
+- عارض Sketchfab داخل iframe يسمح بالتدوير والتكبير من داخل المشغل. لا تستطيع الصفحة الأم قراءة اسم المجسم المضغوط عليه مباشرة بسبب عزل iframe؛ اختيار الفصوص ما زال يتم من قائمة أجزاء المخ الجانبية.
 
-Educational use only; not for diagnosis or treatment.
+
+تأكيد توزيع نماذج المخ: نموذج Plastinated Human Brain (Sketchfab ID 2df234ff65b0483fb5b5e15e40efa65d) مخصص للمخ الكامل فقط. نموذج Cerebellum (Sketchfab ID 3a4e017a202a4928b666371d075d0e21) مخصص للمخيخ فقط ويظل منفصلًا في صفحة المخيخ. البحث عن «المخ» يفتح صفحة مستقلة بها نموذج المخ الكامل وقائمة أجزائه، بينما البحث عن «المخيخ» يفتح صفحة المخيخ المستقلة. نماذج القلب والرئتين لم تُستبدل بهذا النموذج.
+
+
+Male reproductive system content
+- Search for “الجهاز التناسلي الذكري” or “Male reproductive system” to open its topic page.
+- The main Ebers Sketchfab embed is the user-provided system model.
+- The page includes separate anatomical topic pages for testes, seminiferous tubules, epididymis, vas deferens, seminal vesicles, ejaculatory ducts, prostate, bulbourethral glands, urethra, penis, corpora cavernosa, corpus spongiosum, glans, scrotum, and spermatic cord.
+- Each part page begins with an interactive simplified 3D schematic, then explanatory text, a schematic location diagram, and relevant NCBI references. It also provides an optional external reference atlas with selectable structures. The prostate and testis pages additionally include dedicated external 3D viewers.
+- These 3D schematics are labelled as educational simplifications, not exact anatomical scans. External viewers require internet access. Check model attribution and reuse terms in ATTRIBUTION.txt.
