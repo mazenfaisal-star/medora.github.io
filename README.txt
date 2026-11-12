@@ -41,3 +41,13 @@ Male reproductive system content
 - Separate individual-part 3D models now cover prostate, seminal vesicles, epididymis, vas deferens, corpora cavernosa, corpus spongiosum, glans, urethra and a penis composite; Anatomio provides separate right/left ejaculatory-duct viewers; Body Atlas provides focused scrotum and bulbourethral-gland viewers.
 - No verified standalone 3D model for the spermatic cord alone is currently used. A combined model that includes testes was intentionally excluded.
 - See ATTRIBUTION.txt for source, licence and embed credits. Body Atlas models are simplified learning illustrations, not medical-grade scans. External viewers require internet access.
+
+
+إضافة الأطالس التشريحية التفاعلية أسفل النماذج الأساسية:
+- صفحة المخ: أطلس تفاعلي منفصل يمكن تدويره وتكبيره واستكشاف الفصوص والتراكيب العميقة: https://cogni.cards/anatomy/brain/
+- صفحة القلب: أطلس تفاعلي للحجرات والصمامات والأوعية: https://cogni.cards/anatomy/heart/
+- صفحة الرئتين: أطلس تفاعلي لفصوص الرئتين والشعب الهوائية وتفرعاتها: https://cogni.cards/anatomy/respiratory-system/
+- صفحة الجهاز التناسلي الذكري: عارض Cogni Anatomy التفاعلي موجود أسفل نموذج Sketchfab الأساسي مباشرة.
+- النموذج الأساسي لكل عضو لم يُستبدل؛ الأطلس الإضافي يظهر تحته وقبل قائمة الأجزاء والشرح.
+- العارضات مستضافة خارجيًا وتحتاج اتصالًا بالإنترنت. تتيح التدوير والتكبير واختيار البنى، وقد تختلف أدوات البحث والعزل والطبقات حسب النموذج.
+- نماذج Cogni Anatomy تعليمية مبنية على مجموعات تشريحية مرجعية وليست أداة تشخيص أو تمثيلًا للاختلافات الفردية. راجع ATTRIBUTION.txt لتفاصيل المصادر والتراخيص.
