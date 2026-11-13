@@ -1,69 +1,61 @@
-ANATOMY MODEL SOURCES
+MEDORA — MODEL SOURCES, ATTRIBUTION AND LIMITATIONS
+Last reviewed: 13 November 2026
 
-Brain (whole-brain interactive embed): “Plastinated Human Brain” by UBC Medicine - Educational Media, embedded from Sketchfab.
-Model page: https://sketchfab.com/3d-models/plastinated-human-brain-2df234ff65b0483fb5b5e15e40efa65d
-Embed URL: https://sketchfab.com/models/2df234ff65b0483fb5b5e15e40efa65d/embed
-The iframe embed is used rather than downloading or redistributing the model file. Follow the model page and Sketchfab terms for reuse; do not infer a Creative Commons license from the embed code.
+PRIMARY ORGAN MODELS
+1) Brain — “Plastinated Human Brain” by UBC Medicine - Educational Media.
+   Embedded viewer: https://sketchfab.com/models/2df234ff65b0483fb5b5e15e40efa65d/embed
+   Model page: https://sketchfab.com/3d-models/plastinated-human-brain-2df234ff65b0483fb5b5e15e40efa65d
+   The project embeds the model through its hosted viewer; this does not grant a right to download or redistribute the source file. Retain creator credit and follow the model page/platform terms.
 
-Heart (female reference organ, HRA):
-https://3d.nih.gov/entries/20966
-https://cdn.humanatlas.io/digital-objects/ref-organ/heart-female/v1.3/assets/3d-vh-f-heart.glb
+2) Heart — Human Reference Atlas / NIH 3D, “Heart, Male”, entry 3DPX-021000.
+   Entry: https://3d.nih.gov/entries/3DPX-021000
+   Asset: https://cdn.humanatlas.io/digital-objects/ref-organ/heart-male/v1.2/assets/3d-vh-m-heart.glb
+   The entry identifies this as a reference organ created from the Visible Human Male dataset supplied by the U.S. National Library of Medicine.
 
-Lung (female reference organ, HRA):
-https://3d.nih.gov/entries/20974
-https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.4/assets/3d-vh-f-lung.glb
+3) Lungs — Human Reference Atlas / NIH 3D, “Lung, Male”, entry 3DPX-021008.
+   Entry: https://3d.nih.gov/entries/21008
+   Asset: https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.3/assets/3d-vh-m-lung.glb
+   The entry identifies this as a reference organ created from the Visible Human Male dataset. Important model boundary: version 1.3 removed the larynx, trachea and main bronchi; lung lobes and intrapulmonary bronchi remain. Do not describe this asset as a complete respiratory tract.
 
-The Human Reference Atlas / HuBMAP reference-organ data pages identify these 3D data with a Creative Commons Attribution 4.0 International (CC BY 4.0) license. Preserve attribution when redistributing the model assets. This package links to externally hosted GLB assets rather than bundling the model binaries.
+4) Cerebellum — “Cerebellum” by anajd on Sketchfab.
+   Embedded viewer: https://sketchfab.com/models/3a4e017a202a4928b666371d075d0e21/embed
+   Model page: https://sketchfab.com/3d-models/cerebellum-3a4e017a202a4928b666371d075d0e21
+   Retain the creator credit and check the model page for the current license before downloading, adapting or redistributing it.
 
-Educational source pages:
-Heart anatomy and blood flow: https://www.nhlbi.nih.gov/health/heart/anatomy
-Lung health: https://www.nhlbi.nih.gov/health/lungs
+MALE REPRODUCTIVE SYSTEM
+- The whole-system model selected by the project owner is retained unchanged: “Male reproductive system” by Ebers, embedded from Sketchfab:
+  https://sketchfab.com/3d-models/male-reproductive-system-b77f14ee1cf743ffbac365b045598c48
+- The existing testis cut-section model is retained unchanged:
+  https://sketchfab.com/3d-models/testis-cut-section-with-labels-detail-2af4a301518a47c4b298f1872ec76fcc
+- Separate meshes for prostate, seminal vesicles, epididymides, deferent ducts, corpora cavernosa, corpus spongiosum, glans, urethra and a composite penis view are streamed from OrganUI's BodyParts3D-based GLB. Source repository:
+  https://github.com/organui/prostate-3d
+  Pinned asset:
+  https://cdn.jsdelivr.net/gh/organui/prostate-3d@204c67a54226a19868abd0a5e8449a7f82827bf9/public/models/prostate.glb
+  Model-data attribution/licence details are recorded by the source repository; follow the applicable CC BY-SA 2.1 Japan conditions and preserve attribution.
+- Right and left ejaculatory-duct pages use Anatomio / Z-Anatomy / DBCLS:
+  https://anatomio.org/en/human/trunk/structures/right-ejaculatory-duct/
+  https://anatomio.org/en/human/trunk/structures/left-ejaculatory-duct/
+  Consult the source page and applicable CC BY-SA 4.0 attribution requirements.
+- The current scrotum and bulbourethral-gland views use Layered Body Atlas:
+  https://bodyatlas.github.io/parts/scrotum/
+  https://bodyatlas.github.io/parts/bulbourethral-gland/
+  These are described by their source as simplified educational illustrations, not medical-grade scans. They are not counted as verified anatomical-grade 3D models.
+- No independently isolated, verified spermatic-cord mesh is currently included. A combined model containing testes was deliberately not substituted.
+- The legacy testis and seminiferous-tubule viewer remains unchanged.
 
-These sources are for general education. Medora's own summaries should be checked against the original references before clinical or formal academic use.
+CURRENT MODEL-COVERAGE LIMITATIONS — DO NOT OVERSTATE
+- Several brain substructure, heart-part and lung-part views are procedural Three.js educational shapes built from primitives, not anatomical scans or validated individual-part meshes. These are placeholders, not proof of a real organ-specific model.
+- The seven brain-region selector entries and the 40 individual-part catalogue entries are not equivalent to 47 verified standalone anatomical models.
+- The current 40-part catalogue covers: 5 deeper brain structures, 11 heart structures, 9 respiratory structures and 15 male reproductive structures. Coverage is uneven; the count is a catalogue count, not a model-validation count.
+- The male reproductive part set includes some source-backed meshes/viewers, simplified Layered Body Atlas illustrations and at least one disclosed missing model (spermatic cord). It is not complete.
+- A model appearing in a viewer is not a clinical validation. Verify anatomical scope, source dataset, sex/age/variant where relevant, mesh labels, licence and specialist review before describing it as anatomically validated.
+- Third-party attribution must not be hidden. Medora may use a clean viewer layout, but must preserve creator, dataset and licence information in the project/source credits.
 
-CEREBELLUM MODEL EMBED
-Sketchfab model: “Cerebellum” by anajd.
-Embedded from Sketchfab (the model is hosted by Sketchfab and is not bundled in this repository):
-https://sketchfab.com/3d-models/cerebellum-3a4e017a202a4928b666371d075d0e21
-Embed URL:
-https://sketchfab.com/models/3a4e017a202a4928b666371d075d0e21/embed
-The Sketchfab page and its displayed license govern reuse of this model. Medora uses the provided embedded viewer and preserves creator/platform attribution.
+EXTERNAL SCIENTIFIC REFERENCES CURRENTLY USED
+- OpenStax, Anatomy and Physiology 2e, section 13.2: The Central Nervous System.
+- NHLBI / NIH: Heart anatomy, blood flow and lungs.
+- NCBI Bookshelf / StatPearls: Physiology, Male Reproductive System; Anatomy, Abdomen and Pelvis, Male Genitourinary Tract.
+- Further catalogue items are listed in the in-site evidence library. Each entry needs claim-level mapping and a fresh metadata check before commercial release.
 
-
-Male reproductive system additions (educational embeds)
-- Main model embedded from Sketchfab: “Male reproductive system” by Ebers: https://sketchfab.com/3d-models/male-reproductive-system-b77f14ee1cf743ffbac365b045598c48
-- Optional selectable anatomy atlas: Cogni Anatomy male reproductive system viewer; geometry credited to BodyParts3D, CC BY 4.0: https://cogni.cards/anatomy/male-reproductive-system/
-- Prostate and bladder interactive model: ICUA, derived from Human Reference Atlas / Visible Human Male, CC BY 4.0. The page notes the urethra is reconstructed schematically: https://holep.icua.es/anatomia/en.html
-- Testis cut-section model (Sketchfab viewer): “Testis Cut Section With Labels detail” by Deepankar Parmar: https://sketchfab.com/3d-models/testis-cut-section-with-labels-detail-2af4a301518a47c4b298f1872ec76fcc. Viewer embed only; check creator terms before any download, adaptation, or reuse outside Sketchfab.
-- Medical text references: StatPearls / NCBI Bookshelf, “Physiology, Male Reproductive System” (updated 2023-05-01): https://www.ncbi.nlm.nih.gov/books/NBK538429/ ; “Anatomy, Abdomen and Pelvis, Male Genitourinary Tract” (updated 2022-09-12): https://www.ncbi.nlm.nih.gov/books/NBK562291/
-
-Notes: The custom Three.js models for individual structures are simplified educational schematics, not anatomical scans or clinical-grade reconstructions. Do not present them as exact models. External 3D viewers require internet access.
-
-
-MALE REPRODUCTIVE INDIVIDUAL-PART 3D MODELS
-- Isolated meshes for prostate, seminal vesicles, epididymides, deferent ducts, corpora cavernosa, corpus spongiosum, glans, urethra and a composite penis view are streamed from OrganUI's prostate.glb, adapted from BodyParts3D / Anatomography, © The Database Center for Life Science (DBCLS). Model-data license: CC BY-SA 2.1 Japan. Source repository: https://github.com/organui/prostate-3d ; pinned model asset: https://cdn.jsdelivr.net/gh/organui/prostate-3d@204c67a54226a19868abd0a5e8449a7f82827bf9/public/models/prostate.glb . The composite penis view contains the corpora cavernosa, corpus spongiosum and glans, not the testes.
-- Right and left ejaculatory-duct viewers are embedded from Anatomio. 3D data credited to Z-Anatomy / DBCLS, CC BY-SA 4.0. Source pages: https://anatomio.org/en/human/trunk/structures/right-ejaculatory-duct/ and https://anatomio.org/en/human/trunk/structures/left-ejaculatory-duct/ . Regional context and model limitations: https://anatomio.org/en/human/trunk/pelvis/ .
-- Focused scrotum and bulbourethral-gland views are embedded from Layered Body Atlas: https://bodyatlas.github.io/parts/scrotum/ and https://bodyatlas.github.io/parts/bulbourethral-gland/ . The atlas describes its models as simplified educational illustrations, not medical-grade scans. Medora embeds the externally hosted viewer and does not bundle its geometry.
-- No independently isolated, verified 3D mesh for the spermatic cord alone was added. A combined model that also shows the testes was intentionally not used, in accordance with the requested scope. The spermatic-cord page discloses this limitation.
-- All external 3D viewers require an internet connection. Their respective licenses, credits and source limitations apply. Obtain specialist anatomical review before presenting the models as clinically validated anatomy.
-
-
-COGNI ANATOMY INTERACTIVE ORGAN ATLASES
-Medora embeds Cogni Anatomy interactive viewers directly below the existing primary model on each supported organ page. These are external iframe viewers; Medora does not download or redistribute their mesh files.
-
-- Brain viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=brain
-  Topic/source page: https://cogni.cards/anatomy/brain/
-  Source credit: BodyParts3D, DBCLS. Model page displays CC BY 4.0.
-- Heart viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=heart
-  Topic/source page: https://cogni.cards/anatomy/heart/
-  Source credit: BodyParts3D and Human Reference Atlas (HRA). Model page displays CC BY 4.0.
-- Respiratory viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=respiratory-isolated
-  Topic/source page: https://cogni.cards/anatomy/respiratory-system/
-  Source credit: BodyParts3D and Z-Anatomy. Model page displays CC BY-SA 4.0.
-- Male urogenital viewer preset: https://cogni.cards/anatomy/viewer/?entry=topic&lang=en&preset=urogenital-male-isolated
-  Topic/source page: https://cogni.cards/anatomy/male-reproductive-system/
-  Source credit: BodyParts3D, DBCLS. Model page displays CC BY 4.0.
-
-Cogni Anatomy describes its atlas as an interactive browser-based viewer with selectable anatomical structures, system visibility controls, zoom/rotation, isolation/transparency and section tools. It uses multiple datasets and licenses; where content includes Z-Anatomy geometry, CC BY-SA 4.0 requirements apply. See https://cogni.cards/anatomy/about/ for source-specific license details and limitations. The viewer models are educational reference anatomy, not diagnostic tools and not representations of individual variation.
-
-The existing Medora primary models remain in place: the Sketchfab brain, the existing heart/lung GLB reference models and the user's Ebers male reproductive system Sketchfab embed. The male atlas was moved out of its collapsed details disclosure so it appears visibly below the primary male-system model, matching the placement used on the other organ pages.
+GENERAL
+External models and viewers require internet access. Licensing varies by model and repository; do not assume that an embeddable viewer grants redistribution rights. The medical content is educational and not a diagnostic or treatment service.
