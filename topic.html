@@ -1634,7 +1634,7 @@ html[data-theme="dark"] .topic-search-form,html[data-theme="dark"] .topic-source
     }
     const src=modelSourceForParent(organ.id);
     const alt=organ.id==='heart'?'نموذج تشريحي مرجعي لقلب بشري من بيانات Visible Human Male':'نموذج تشريحي مرجعي لرئتين بشريتين من بيانات Visible Human Male';
-    const credit=organ.id==='heart'?'Human Reference Atlas / NIH 3D · Heart, Male · Visible Human Male · CC BY 4.0':'Human Reference Atlas / NIH 3D · Lung, Male · Visible Human Male · CC BY 4.0';
+    const credit=organ.id==='heart'?'Human Reference Atlas / NIH 3D · Heart, Male · Visible Human Male':'Human Reference Atlas / NIH 3D · Lung, Male · Visible Human Male';
     return `<div class="anatomy-model-shell"><model-viewer id="topicOrganModel" data-medora-parent="${safe(organ.id)}" data-anatomy-model src="${src}" alt="${alt}" camera-controls auto-rotate auto-rotate-delay="1800" rotation-per-second="12deg" shadow-intensity="0.6" exposure="1.05" environment-image="neutral" loading="lazy" reveal="auto" interaction-prompt="auto"><div slot="poster">يُحمَّل المجسم الخارجي عند فتح هذه الصفحة. يحتاج إلى اتصال بالإنترنت.</div></model-viewer><div class="anatomy-model-status" id="topicModelSelectionStatus" aria-live="polite">يمكن تدوير المجسم وتكبيره. إذا كانت البنية داخل ملف النموذج مسماة، سيحاول Medora إظهار اسمها عند الضغط عليها؛ وإلا استخدم قائمة الأجزاء.</div></div><p class="model-credit">المصدر: ${credit}. <a href="${organ.id==='heart'?'https://3d.nih.gov/entries/3DPX-021000':'https://3d.nih.gov/entries/21008'}" target="_blank" rel="noopener noreferrer">بيانات النموذج والترخيص ↗</a></p>`;
   }
   // Educational molecule cards are chemistry examples, not a drug/brand finder or medical-use guide.
