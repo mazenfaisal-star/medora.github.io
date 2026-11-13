@@ -59,3 +59,23 @@ EXTERNAL SCIENTIFIC REFERENCES CURRENTLY USED
 
 GENERAL
 External models and viewers require internet access. Licensing varies by model and repository; do not assume that an embeddable viewer grants redistribution rights. The medical content is educational and not a diagnostic or treatment service.
+
+
+ADDED HEART STRUCTURE MODELS — 13 NOVEMBER 2026
+1) Left heart, aorta, left ventricle and left atrium — Sketchfab model by ramon.gonzalez.cabrera.
+   Model page: https://sketchfab.com/3d-models/left-heartaortaleft-ventricleleft-atrium-f2d4a2b2e9114a93ad8635f6a7fb59df
+   Embedded viewer: https://sketchfab.com/models/f2d4a2b2e9114a93ad8635f6a7fb59df/embed
+   Sketchfab metadata describes the source as original DICOM files converted to STL using 3D Slicer and states that the aorta, left ventricle, left atrium and ramifications can be seen.
+   License shown on the model page: CC Attribution (Creative Commons Attribution). Keep creator/source attribution in this central credits record. The same combined viewer is used on the left-atrium, left-ventricle and aorta topic pages; it is not represented as an isolated mesh for each individual structure.
+   No changes to the source model; embedded as hosted by Sketchfab.
+
+2) Mitral valve — Sketchfab model by Abdel Hakim Moustafa (@AMoustafa_MD).
+   Model page: https://sketchfab.com/3d-models/mitral-valve-8596e64123124ee7adc50918feb77fbc
+   Embedded viewer: https://sketchfab.com/models/8596e64123124ee7adc50918feb77fbc/embed
+   Sketchfab model metadata states that it is from a 3D echo dataset and lists the license as CC Attribution (Creative Commons Attribution).
+   Keep creator/source attribution in this central credits record. Embedded without alteration.
+
+Attribution placement note:
+- The model viewer panels do not add a separate visible source-and-rights paragraph below each model, per the project UI preference.
+- Creator, model-page link and license metadata remain recorded centrally in this file. CC Attribution terms still require appropriate credit and a link to the license/source; do not remove this record or claim the models are Medora-created.
+- Before downloading, modifying, redistributing files or preparing a commercial release, recheck the live model-page license and its exact version/conditions.
