@@ -1878,6 +1878,33 @@ html[data-theme="dark"] .topic-search-form,html[data-theme="dark"] .topic-source
     const id=partOrRegion.id||partOrRegion.regionKey;
     const regionKey=partOrRegion.regionKey||'';
     if(partOrRegion.parent==='male-reproductive') return malePartModelMarkup(partOrRegion);
+    // The same verified left-heart dataset is useful for the left atrium, left ventricle and aorta pages.
+    // It is a combined anatomical scan, not a mesh-isolated single-part model.
+    if(['left-atrium','left-ventricle','aorta'].includes(id)){
+      const focusName=safe(partOrRegion.name);
+      return `<section class="anatomy-panel part-model-first">
+        <h3>المجسم التشريحي ثلاثي الأبعاد: ${focusName}</h3>
+        <p>يعرض هذا النموذج الجانب الأيسر من القلب، بما يشمل الأذين الأيسر والبطين الأيسر والأبهر وتفرعاته. النموذج يجمع هذه البنى في عرض واحد ولا يعزل كل بنية منفردة.</p>
+        <div class="sketchfab-cerebellum-shell"><div class="sketchfab-embed-wrapper">
+          <iframe title="Left heart, aorta, left ventricle and left atrium 3D model" loading="lazy" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/f2d4a2b2e9114a93ad8635f6a7fb59df/embed"></iframe>
+        </div></div>
+      </section>`;
+    }
+    if(id==='mitral-valve'){
+      return `<section class="anatomy-panel part-model-first">
+        <h3>المجسم التشريحي ثلاثي الأبعاد: الصمام التاجي</h3>
+        <p>استكشف نموذج الصمام التاجي بتدويره وتكبيره من خلال عارض Sketchfab.</p>
+        <div class="sketchfab-cerebellum-shell"><div class="sketchfab-embed-wrapper">
+          <iframe title="Mitral valve 3D model" loading="lazy" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/8596e64123124ee7adc50918feb77fbc/embed"></iframe>
+        </div></div>
+      </section>`;
+    }
+    if(id==='right-atrium'){
+      return `<section class="anatomy-panel part-model-first">
+        <h3>مجسم الأذين الأيمن قيد الإضافة</h3>
+        <div class="part-viewer-poster"><b>الكود المرسل للرقم 13 لا يمثل الأذين الأيمن.</b><span>النموذج المرسل بعنوان LEFT HEART يحتوي على الأذين الأيسر والبطين الأيسر والأبهر وتفرعاته. لم أضعه هنا حتى لا نعرض تركيبًا تشريحيًا خاطئًا.</span></div>
+      </section>`;
+    }
     if(id==='cerebellum'){
       return `<section class="anatomy-panel part-model-first"><h3>المجسم ثلاثي الأبعاد: ${safe(partOrRegion.name)} <small dir="ltr" style="font-size:13px;color:var(--muted)">(Cerebellum)</small></h3><p>استكشف نموذجًا ثلاثي الأبعاد مستقلًا للمخيخ. اسحب النموذج لتدويره واستخدم أدوات Sketchfab للتكبير وتغيير زاوية العرض.</p><div class="sketchfab-cerebellum-shell"><div class="sketchfab-embed-wrapper"><iframe title="Cerebellum" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share loading="lazy" src="https://sketchfab.com/models/3a4e017a202a4928b666371d075d0e21/embed"></iframe></div></div><p class="sketchfab-cerebellum-credit">نموذج <a href="https://sketchfab.com/3d-models/cerebellum-3a4e017a202a4928b666371d075d0e21" target="_blank" rel="nofollow noopener noreferrer">Cerebellum</a> بواسطة <a href="https://sketchfab.com/anajd" target="_blank" rel="nofollow noopener noreferrer">anajd</a> على <a href="https://sketchfab.com" target="_blank" rel="nofollow noopener noreferrer">Sketchfab</a>. قد يتطلب تحميل النموذج اتصالًا بالإنترنت والسماح بالمحتوى المضمّن.</p><p class="model-accuracy-note">هذا نموذج ثلاثي الأبعاد للمخيخ من Sketchfab. راجع بيانات النموذج وترخيصه من صفحة المصدر قبل إعادة استخدامه خارج التضمين داخل Medora.</p></section>`;
     }
