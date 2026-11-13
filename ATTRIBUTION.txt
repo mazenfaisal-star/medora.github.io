@@ -45,8 +45,8 @@ MALE REPRODUCTIVE SYSTEM
 
 CURRENT MODEL-COVERAGE LIMITATIONS — DO NOT OVERSTATE
 - Several brain substructure, heart-part and lung-part views are procedural Three.js educational shapes built from primitives, not anatomical scans or validated individual-part meshes. These are placeholders, not proof of a real organ-specific model.
-- The seven brain-region selector entries and the 40 individual-part catalogue entries are not equivalent to 47 verified standalone anatomical models.
-- The current 40-part catalogue covers: 5 deeper brain structures, 11 heart structures, 9 respiratory structures and 15 male reproductive structures. Coverage is uneven; the count is a catalogue count, not a model-validation count.
+- The seven brain-region selector entries and the 46 individual-part catalogue entries are not equivalent to 53 verified standalone anatomical models.
+- The current 46-part catalogue covers: 11 brain region/structure entries (four lobes, cerebellum, brainstem and five deeper structures), 11 heart structures, 9 respiratory structures and 15 male reproductive structures. Coverage is uneven; the count is a catalogue count, not a model-validation count.
 - The male reproductive part set includes some source-backed meshes/viewers, simplified Layered Body Atlas illustrations and at least one disclosed missing model (spermatic cord). It is not complete.
 - A model appearing in a viewer is not a clinical validation. Verify anatomical scope, source dataset, sex/age/variant where relevant, mesh labels, licence and specialist review before describing it as anatomically validated.
 - Third-party attribution must not be hidden. Medora may use a clean viewer layout, but must preserve creator, dataset and licence information in the project/source credits.
